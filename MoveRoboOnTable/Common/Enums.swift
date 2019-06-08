@@ -15,9 +15,9 @@ enum Direction{
 }
 
 enum DirectionOutput: String, CaseIterable{
+    case east = "east"
     case north = "north"
     case west = "west"
-    case east = "east"
     case south = "south"
 }
 

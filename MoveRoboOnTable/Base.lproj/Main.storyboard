@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the valid co-ordinates (x: left picker, y: right picker) for starting position:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APn-yV-4Tc">
-                                <rect key="frame" x="16" y="104" width="343" height="41"/>
+                                <rect key="frame" x="16" y="80" width="343" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1xD-Y9-cgN">
-                                <rect key="frame" x="16" y="155" width="343" height="216"/>
+                                <rect key="frame" x="16" y="101" width="343" height="216"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtK-rb-grY">
                                         <rect key="frame" x="0.0" y="0.0" width="171.5" height="216"/>
@@ -44,13 +44,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the direction:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Va-t7-RvY">
-                                <rect key="frame" x="16" y="411" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="317" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-VL-3ii">
-                                <rect key="frame" x="16" y="431.5" width="343" height="216"/>
+                                <rect key="frame" x="16" y="317.5" width="343" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8m1-Yu-aYR" id="dqA-NK-oLE"/>
                                     <outlet property="delegate" destination="8m1-Yu-aYR" id="yKa-lo-a1z"/>
@@ -85,16 +85,16 @@
                             <constraint firstItem="y9L-VL-3ii" firstAttribute="leading" secondItem="sFG-cX-Zm8" secondAttribute="leading" constant="16" id="AKO-G2-dYs"/>
                             <constraint firstItem="7TW-gf-ht7" firstAttribute="bottom" secondItem="e03-Nx-0xh" secondAttribute="bottom" constant="16" id="Bwu-NA-VXs"/>
                             <constraint firstAttribute="trailing" secondItem="APn-yV-4Tc" secondAttribute="trailing" constant="16" id="C2K-WL-maD"/>
-                            <constraint firstItem="1xD-Y9-cgN" firstAttribute="top" secondItem="APn-yV-4Tc" secondAttribute="bottom" constant="10" id="H2F-sr-Efj"/>
+                            <constraint firstItem="1xD-Y9-cgN" firstAttribute="top" secondItem="APn-yV-4Tc" secondAttribute="bottom" constant="-20" id="H2F-sr-Efj"/>
                             <constraint firstItem="7Va-t7-RvY" firstAttribute="centerX" secondItem="7TW-gf-ht7" secondAttribute="centerX" id="Hx5-iP-lUH"/>
                             <constraint firstItem="7TW-gf-ht7" firstAttribute="trailing" secondItem="1xD-Y9-cgN" secondAttribute="trailing" constant="16" id="MLu-kC-kI1"/>
                             <constraint firstItem="e03-Nx-0xh" firstAttribute="leading" secondItem="7TW-gf-ht7" secondAttribute="leading" constant="16" id="Tez-G1-9xt"/>
                             <constraint firstItem="1xD-Y9-cgN" firstAttribute="leading" secondItem="7TW-gf-ht7" secondAttribute="leading" constant="16" id="UY4-Uh-EDv"/>
-                            <constraint firstItem="y9L-VL-3ii" firstAttribute="top" secondItem="7Va-t7-RvY" secondAttribute="bottom" id="UkV-yo-hbC"/>
+                            <constraint firstItem="y9L-VL-3ii" firstAttribute="top" secondItem="7Va-t7-RvY" secondAttribute="bottom" constant="-20" id="UkV-yo-hbC"/>
                             <constraint firstItem="7TW-gf-ht7" firstAttribute="trailing" secondItem="e03-Nx-0xh" secondAttribute="trailing" constant="16" id="c7U-m7-3PZ"/>
-                            <constraint firstItem="7Va-t7-RvY" firstAttribute="top" secondItem="1xD-Y9-cgN" secondAttribute="bottom" constant="40" id="ies-vz-HY8"/>
+                            <constraint firstItem="7Va-t7-RvY" firstAttribute="top" secondItem="1xD-Y9-cgN" secondAttribute="bottom" id="ies-vz-HY8"/>
                             <constraint firstItem="APn-yV-4Tc" firstAttribute="leading" secondItem="7TW-gf-ht7" secondAttribute="leading" constant="16" id="oDK-Tw-Hly"/>
-                            <constraint firstItem="APn-yV-4Tc" firstAttribute="top" secondItem="7TW-gf-ht7" secondAttribute="top" constant="40" id="s7R-iA-Ggx"/>
+                            <constraint firstItem="APn-yV-4Tc" firstAttribute="top" secondItem="7TW-gf-ht7" secondAttribute="top" constant="16" id="s7R-iA-Ggx"/>
                             <constraint firstItem="7TW-gf-ht7" firstAttribute="trailing" secondItem="y9L-VL-3ii" secondAttribute="trailing" constant="16" id="vyA-WR-gWT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7TW-gf-ht7"/>
